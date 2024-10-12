@@ -1,0 +1,26 @@
+meta {
+  name: Create Product
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3001/products
+  body: multipartForm
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Pizza",
+    "icon": "🍕"
+  }
+}
+
+body:multipart-form {
+  name: Coca cola
+  description: Coca cola geladinha
+  image: @file(/Users/60003734/Downloads/o-poder-do-js-recursos-main/aula-1/coca-cola.png)
+  price: 7
+  category: 66d2e90e7d6abf822c62a6e8
+}

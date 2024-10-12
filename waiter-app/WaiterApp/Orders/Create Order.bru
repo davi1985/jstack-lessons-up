@@ -1,0 +1,21 @@
+meta {
+  name: Create Order
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3001/orders
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "table": "123",
+    "products": [
+      {"product": "66d364af4619ac986ca79726", "quantity": "3"},
+      {"product": "66d36869c44de80fa23b0398", "quantity": "2"}
+    ]
+  }
+}

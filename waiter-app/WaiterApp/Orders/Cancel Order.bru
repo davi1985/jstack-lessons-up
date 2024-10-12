@@ -1,0 +1,17 @@
+meta {
+  name: Cancel Order
+  type: http
+  seq: 4
+}
+
+delete {
+  url: http://localhost:3001/orders/66d36c193fe10ea4faba132f
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "status": "IN_PRODUCTION"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "WaiterApp",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
